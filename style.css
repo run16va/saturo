@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(15, 2, 24);
+    color: white;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(20, 10, 29);
+    border-bottom: 1px solid black;
+    z-index: 100;
+    position: relative;
+}
+
+nav .left {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav .right li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+ul a::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    background-color: #ffff;
+    transition: all ease .5s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a::before:hover {
+    right: 0;
+}
+
+ul a li {
+    display: inline;
+}
+
+li {
+    margin: 20px;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.sec1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(1331316.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spoint {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    filter: blur(20px);
+    position: absolute;
+    mix-blend-mode: color;
+    z-index: 99;
+}
+
+.img img {
+    display: block;
+    height: 160vh;
+    width: 100vw;
+    z-index: 88;
+    position: relative;
+}
+
+h2 {
+    z-index: 99;
+    font-size: 6rem;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #ffffff;
+    mix-blend-mode: difference;
+    text-transform: uppercase;
+}
+
+.sec1 p {
+    
+    line-height: 3vh;
+    text-align: center;
+    margin-top: 40vh;
+    z-index: 8;
+    display: block;
+    position: absolute;
+}
+#onclick {
+    height: 40px;
+    width: 80px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.13);
+    filter: blur(1px);
+    position: absolute;
+    border: none;
+    bottom: 50px;
+    z-index: 100;
+    transition: all ease 0.2s;
+}
+
+#onclick:hover {
+    scale: 1.2;
+}
+
+#onclick:active {
+    filter: blur(1px);
+    color: white;
+    background-color: rgba(25, 99, 236, 0.479);
+
+}
+
+#elem {
+    height: 50vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.062);
+    text-align: center;
+    margin: 80px;
+    border-radius: 20px;
+    filter: blur(.8px);
+    outline: .5px solid #ffff;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#elem p {
+    text-align: left;
+    margin-right: 30px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+#elem input {
+    height: 4vh;
+    width: 30vw;
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline-style: none;
+    text-transform: capitalize;
+}
+
+#elem button {
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 60px 60px;
+}
+
+#elem button:active {
+    scale: 0.9;
+}
+
+#elem a {
+    color: #ffff;
+}
+
+#back {
+    height: 100Vh;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: transparent;
+    border: none;
+}
+
+.sec2 {
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(1294445.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 img {
+    height: 100vh;
+    width: 100vw;
+    z-index: 88;
+    position: absolute;
+}
+
+#bar {
+    display: flex;
+    position: relative;
+    height: 15vh;
+    width: 60vw;
+    outline: 1px solid #ffff;
+    background-color: rgba(255, 255, 255, 0.315);
+    transform: skewX(15deg);
+    rotate: 15deg;
+}
+
+#bar0 {
+    margin-top: 30px;
+    height: 15vh;
+    width: 60vw;
+    outline: 1px solid #ffff;
+    background-color: rgba(255, 255, 255, 0.315);
+    transform: skewX(15deg);
+    rotate: 15deg;
+}
+@media screen and (max-width:600px){
+
+     h2 {
+        margin-bottom: 60vh;
+        font-size: 4rem;
+     }
+
+     .sec1 p {
+        margin-bottom:  60px;
+     }
+
+
+    
+    
+}
+
+
